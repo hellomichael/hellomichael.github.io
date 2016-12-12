@@ -4,29 +4,38 @@
     <meta charset="utf-8">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <title>The Personal Projects of Michael Ngo</title>
+    <title>Hello.</title>
 
     <style>
       html, body {
-        position: absolute;
+        /*position: relative;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
-
-      .projects {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        width: 250px;
+        overflow: hidden;*/
         margin: 0;
         padding: 0;
         font-family: monospace;
+      }
+
+      body {
+        padding: 30px;
+      }
+
+      small {
+        font-size: 10px;
+      }
+
+      .projects {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        margin: 0;
+        padding: 0;
         font-size: 11px;
         line-height: 20px;
       }
@@ -34,6 +43,9 @@
       .projects > li {
         display: block;
         list-style: none;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 0 45px;
       }
 
       .projects > li > a {
@@ -47,18 +59,72 @@
         font-weight: bold;
       }
 
-      .projects > li > a > span {
+      .projects > li > a > span:first-child {
+        background-color: yellow;
+      }
+
+      .projects > li > a > span:last-child {
         float: right;
       }
     </style>
   </head>
 
   <body>
+
+
     <ul class="projects">
-      <li><a target="_blank" href="http://these.beatsaredope.com">These Beats Are Dope <span>(2016)</span></a></li>
-      <li><a target="_blank" href="https://www.smashingmagazine.com/2016/07/an-svg-animation-case-study/">The Illusion of Life <span>(2016)</span></a></li>
-      <li><a target="_blank" href="http://peoplebehindthepixels.com">People Behind the Pixels <span>(2014)</span></a></li>
-      <li><a target="_blank" href="https://hellomichael.com">Hello Michael <span>(2013)</span></a></li>
+      <li>
+        <p>
+          Michael Ngo <br/>
+          Front-end Developer <br/>
+          Sydney / Vancouver <br/> <br/>
+
+          W: <a target="_blank" href="https://hellomichael.com">hellomichael.com</a> <br/>
+          E: michael@hellomichael.com <br/>
+        </p>
+      </li>
+
+      <li>
+        <a target="_blank" href="http://these.beatsaredope.com"><span>These Beats Are Dope</span> <span>(2016)</span></a>
+        <p>These Beats Are Dope is a curated playlist for Kanye West. An hommage to his discography, highlighting his entire career.</p>
+        <small><em>React</em>, <em>Pixi.js</em>, <em>Spine</em>, <em>Spotify API</em>, <em>Youtube API</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="https://www.smashingmagazine.com/2016/07/an-svg-animation-case-study/"><span>The Illusion of Life</span> <span>(2016)</span></a>
+        <p>A Smashing Magazine article detailing how to create seemingly complex SVG animations from simple illustrations.</p>
+        <small><em>Snap.js</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="https://thisisneat.com.au"><span>This is Neat</span> <span>(2016)</span></a>
+        <p>This is Neat is a <a target="_blank" href="https://thisisneat.com.au">Sydney based cleaning company</a> specializing in the 'End of Lease' cleaning market.</p>
+        <small><em>Wordpress</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="https://hellomichael.com/keno"><span>Keno</span> <span>(2015)</span></a>
+        <p>An Angular webapp based on Australia's favorite lottery game.</p>
+        <small><em>Angular</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="https://businesseventssydney.com"><span>Business Events Sydney</span> <span>(2015)</span></a>
+        <p>A responsive website for Sydney's premier industry event planner.</p>
+        <small><em>Umbraco</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="http://peoplebehindthepixels.com"><span>People Behind the Pixels</span> <span>(2014)</span></a>
+        <p>People Behind the Pixels is a WebGl title sequence pushing the boundaries of what's capable in the browser.</p>
+        <small><em>Three.js</em></small>
+      </li>
+
+      <li>
+        <a target="_blank" href="https://hellomichael.com"><span>Hello Michael</span> <span>(2013)</span></a>
+        <p>Hello Michael is my personal <a target="_blank" href="http://www.awwwards.com/sites/hellomichael">Awwward</a> winning portfolio.</p>
+        <small><em>PHP</em></small>
+      </li>
     </ul>
   </body>
 </html>
